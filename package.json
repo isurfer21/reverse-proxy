@@ -1,0 +1,38 @@
+{
+  "name": "reverse-proxy-ws",
+  "version": "1.0.0",
+  "description": "A simple reverse-proxy server with zero third-party module dependency",
+  "type": "module",
+  "main": "reverse-proxy.js",
+  "scripts": {
+    "start": "node reverse-proxy.js -a=0.0.0.0 -p=8080 -c=proxy-config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isurfer21/reverse-proxy.git"
+  },
+  "author": "Abhishek Kumar <abhishek.kumar.thakur@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isurfer21/reverse-proxy/issues"
+  },
+  "homepage": "https://github.com/isurfer21/reverse-proxy#readme",
+  "keywords": [
+    "reverse-proxy",
+    "load-balancer",
+    "proxy-middleware",
+    "http-proxy",
+    "express-proxy",
+    "node-proxy",
+    "api-proxy",
+    "web-proxy",
+    "proxy-server",
+    "reverse-proxy-server",
+    "command-line",
+    "cli"
+  ],
+  "bin": {
+    "reverse-proxy": "reverse-proxy.js"
+  }
+}

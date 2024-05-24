@@ -1,0 +1,6 @@
+{
+  "/api": "http://localhost:3001",
+  "/docs": "http://localhost:3002",
+  "/static": "http://localhost:3000/static",
+  "/": "http://localhost:3000"
+}
