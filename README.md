@@ -10,13 +10,17 @@ It requires [node.js](https://nodejs.org/) to be installed on the system.
 
 ## Install
 
-To install this module, run the following command:
+To install this module from [npm](https://www.npmjs.com/), run the following command:
 
 ```sh
 npm install reverse-proxy-ws
 ```
 
-**Note**: Since it doesn't require any third-party module, so there is no need to build it. You can run it right away!
+Alternatively, you can install it from [jsr](https://jsr.io/) as well using this command
+
+```sh
+npx jsr install @akt/reverse-proxy
+```
 
 ### CLI Options
 
@@ -55,6 +59,28 @@ Alternatively, to use shorthand options in the previous command, execute this co
 
 ```sh
 reverse-proxy -a=0.0.0.0 -p=8080 -c=proxy-config.json
+```
+
+## Develop
+
+After cloning the repository get inside it.
+
+To resolve all the dev-dependencies, run this command 
+
+```sh
+npm install
+```
+
+To generate the JavaScript file from the TypeScript file, run this command
+
+```sh
+tsc reverse-proxy.ts --module nodenext
+```
+
+Alternatively, build it by running this command
+
+```sh
+npm run build
 ```
 
 ## License

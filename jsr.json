@@ -1,0 +1,5 @@
+{
+  "name": "@akt/reverse-proxy",
+  "version": "1.0.0",
+  "exports": "./reverse-proxy.ts"
+}

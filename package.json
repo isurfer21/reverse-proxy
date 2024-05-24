@@ -6,6 +6,7 @@
   "main": "reverse-proxy.js",
   "scripts": {
     "start": "node reverse-proxy.js -a=0.0.0.0 -p=8080 -c=proxy-config.json",
+    "build": "tsc reverse-proxy.ts --module nodenext",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,5 +35,9 @@
   ],
   "bin": {
     "reverse-proxy": "reverse-proxy.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
   }
 }

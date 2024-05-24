@@ -5,8 +5,9 @@ import { URL } from "url";
 import { join } from "path";
 import { readFileSync } from "fs";
 
-const cliArgs = { _: [] };
-process.argv.forEach((str, index) => {
+const cliArgs: { [key: string]: any } = { _: [] };
+
+process.argv.forEach((str: string, index: number) => {
   if (index >= 2) {
     if (/^[\-\-]{1,2}.+[\=\:].*$/.test(str)) {
       const argParts = str.split(/[\=\:]/),
@@ -66,11 +67,13 @@ Examples:
       res.end("Missing Host header");
       return;
     }
+
     if (!req.url) {
       res.writeHead(400, { "Content-Type": "text/plain" });
       res.end("Missing URL");
       return;
     }
+
     const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
     const proxyPath = parsedUrl.pathname + parsedUrl.search;
 
